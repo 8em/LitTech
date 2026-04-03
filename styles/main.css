@@ -119,8 +119,48 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../fonts/Inter-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../fonts/Inter-Medium.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../fonts/Inter-SemiBold.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../fonts/Inter-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  padding: 100px;
+}
+body p {
+  font-size: clamp(0.75rem, 0.1764705882rem + 2.3529411765vw, 3rem);
+  width: 6.25rem;
+}
 body {
   background-color: red;
+}
+@media (width <= 47.99875rem) {
+  body {
+    background-color: blue;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

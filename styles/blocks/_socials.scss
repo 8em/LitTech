@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+
+
+
+.social {
+    &__link {
+        color: var(--color-light);
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: rem(20);
+
+        @include laptop {
+            column-gap: rem(14);
+        }
+    }
+}
